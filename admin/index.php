@@ -139,8 +139,8 @@
                             window.location.href = 'login.php'; // Redirect to login or home page
                         }
                     },
-                    error: function() {
-                        $('#result').html('<p style="color:red;">An error occurred. Please try again.</p>');
+                    error: function(response) {
+                        console.log(response);
                     }
                 });
             });
